@@ -1,0 +1,4 @@
+allow mime text/plain
+library file
+
+upload
