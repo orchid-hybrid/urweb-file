@@ -25,9 +25,11 @@ void save_callback_commit(void *data) {
   }
   
   if(fwrite(save_data->data, save_data->size, 1, fptr) != 1) {
+    fclose(fptr);
     uw_set_error_message(save_data->ctx, "writing failed");
     return;
   }
+  
   fclose(fptr);
 }
 
