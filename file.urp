@@ -1,0 +1,3 @@
+ffi file
+include file.h
+link file.o
